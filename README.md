@@ -1,141 +1,77 @@
-Absolutely! Below is your **complete, professional `README.md`** for your GitHub repository **`Sentiment-Analyzer`**, combining both:
+⚖️ AI Legal Sentiment Analyzer
 
-* ✅ A short description (for the GitHub repo summary)
-* ✅ A detailed breakdown of the project, features, tools, usage, and credits
+This project analyzes legal documents to determine sentiment — Positive, Negative, or Neutral. It helps law firms, compliance teams, and researchers quickly evaluate the tone and implications of legal texts like contracts, client feedback, and case summaries.
 
----
+🎯 Project Goals
 
-## ✅ Final `README.md` for Your GitHub Repo
+* Automate sentiment classification of legal text
+* Generate summarized sentiment insights
+* Reduce manual review time and improve legal document analysis
 
-```markdown
-# ⚖️ Sentiment-Analyzer
+⚙️ Implementation
 
-Gradio-based app that classifies legal documents as Positive, Negative, or Neutral using foundation models like Mistral 7B. Supports single text input and CSV batch uploads.
+* Developed using Python in Google Colab
+* User interface built with Gradio
+* Uses foundation models like Mistral-7B and FLAN-T5 via OpenRouter
+* Supports both single-paragraph input and bulk classification via CSV upload
+* Stores historical predictions with timestamps for tracking
 
----
+🚀 Key Features
 
-## 🧠 Overview
+* Analyze legal sentiment in real time
+* Upload CSV files containing multiple legal paragraphs
+* Download sentiment-tagged CSV results
+* View previously analyzed entries with date and time
+* Uses few-shot prompting for high accuracy in tone detection
 
-This project focuses on analyzing legal documents to determine sentiment—**Positive**, **Negative**, or **Neutral**. It helps law firms or compliance teams quickly evaluate the tone and implication of large text bodies like contracts, case summaries, or client feedback.
 
----
+🧪 Tools & Technologies
 
-## 🎯 Project Goals
+* Gradio for building the web interface
+* Pandas for CSV processing
+* Requests for API interaction
+* OpenRouter API to access LLMs like Mistral and FLAN-T5
+* IBM WatsonX Prompt Lab for few-shot prompt experimentation
+* Python for data handling and orchestration
 
-- 🧠 Automate sentiment classification of legal text
-- 📉 Reduce manual review time
-- 📊 Generate tagged insights for faster legal decision-making
 
----
+📁 Project Structure
 
-## ⚙️ Implementation Highlights
+* AI\_Legal\_Sentiment\_Analyzer.ipynb – Colab notebook with the full working app
+* requirements.txt – Python package dependencies
+* README.md – Project documentation
 
-- Built using **Gradio** for an intuitive user interface
-- Powered by foundation models like **Mistral 7B** via **OpenRouter API**
-- Supports both:
-  - 📄 Single paragraph analysis
-  - 📂 CSV file upload for batch processing
-- Tracks previous analysis history with timestamped logs
+✅ How to Use
 
----
+* Open the notebook in Google Colab
+* Run all cells to initialize the app
+* Paste legal text or upload a CSV file with a 'text' column
+* View predicted sentiments and download the output
+* Access past results in the history section
 
-## 🧪 Tools & Technologies
+📄 Sample Output
 
-| Tool              | Purpose                                   |
-|-------------------|--------------------------------------------|
-| `Gradio`          | Interactive UI for users                   |
-| `Mistral-7B` / `FLAN-T5` | Foundation models for sentiment analysis |
-| `OpenRouter.ai`   | Gateway to use open-source models          |
-| `pandas`          | CSV handling                               |
-| `Python (Colab)`  | Logic, backend, integration                |
-| `IBM watsonx.ai`  | Prompt testing (offline / prototype phase) |
+* Input: A legal paragraph
+* Output: Predicted sentiment tag (Positive / Negative / Neutral)
 
----
+📦 Requirements
 
-## 💻 File Structure
+The project requires basic packages including:
 
-```
+* Gradio
+* Pandas
+* Requests
 
-Sentiment-Analyzer/
-├── AI\_Legal\_Sentiment\_Analyzer.ipynb   ← main Colab implementation
-├── requirements.txt                    ← dependencies
-├── README.md                           ← project documentation
+These can be installed using a standard package installer before launching the app.
 
-```
-
----
-
-## ⚙️ How to Use (Google Colab)
-
-1. Open `AI_Legal_Sentiment_Analyzer.ipynb` in Google Colab
-2. Run the cells step-by-step
-3. Launch the Gradio app when prompted
-4. Choose to:
-   - Paste legal text into the textbox
-   - Or upload a `.csv` file with a `text` column
-
----
-
-## 🚀 Features
-
-| Feature                 | Description                                |
-|-------------------------|--------------------------------------------|
-| 📄 **Text Input**        | Analyze sentiment of a paragraph           |
-| 📂 **CSV Upload**        | Bulk classify rows of legal text           |
-| ⏳ **History Accordion** | View timestamped past analyses             |
-| 📥 **CSV Download**      | Save tagged CSV with predicted sentiments  |
-
----
-
-## 📝 Sample
-
-**Input Text:**
-```
-
-The contract was terminated due to multiple violations.
-
-```
-
-**Output:**
-```
-
-Predicted Sentiment: Negative
-
-```
-
----
-
-## 📦 Requirements
-
-Minimal `requirements.txt`:
-
-```
-
-gradio
-pandas
-requests
-
-````
-
-Install with:
-
-```bash
-pip install -r requirements.txt
-````
-
----
-
-## 📄 License
+📜 License
 
 This project is licensed under the MIT License.
 
----
+🙌 Acknowledgements
 
-## 🙌 Acknowledgements
-
-* [OpenRouter.ai](https://openrouter.ai/) – for API access to Mistral 7B and FLAN-T5
-* IBM WatsonX Prompt Lab – for prototyping prompt behavior
-* Hugging Face Transformers, Gradio – for easy deployment
-
----
+* OpenRouter.ai for enabling access to advanced language models
+* IBM WatsonX for prompt prototyping
+* Gradio for streamlining machine learning UI development
+* Hugging Face community for open-source model inspiration
 
